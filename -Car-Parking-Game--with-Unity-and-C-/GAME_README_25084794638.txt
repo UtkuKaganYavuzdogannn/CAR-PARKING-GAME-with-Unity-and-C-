@@ -1,0 +1,39 @@
+------------------Car Parking Simulator Game------------------
+
+We recommend opening this package file in Unity editor version 2022.3.10f1 or close to it. You may encounter various errors when you open it in other versions.
+
+After opening the game file, you have to open "Prototype5" in the "Scenes" file inside the "Assets" file
+
+We used assets from different sources in the game, you can see this under the "Assets" file. You can see all the scripts we created and used in the "Scripts" file inside the "Assets" file, too.
+
+The main goal in the game is to control the vehicle with arrow keys (or W,A,S,D) at the beginning of the game and park it in the area surrounded by pontoons without hitting any obstacles, cars or animals and without deviating from the road.
+
+When you hit any obstacles, cars, animals or successfully park the car in the game, the interface will appear on the screen and get you to play again.
+
+We will continue to improve the game.(Like more difficult tracks or different levels.)
+
+Enjoy :)
+
+----------------------Game Functionalities--------------------
+
+1) Course and Object Colliders:
+
+In our game, there is a course with properly configured box colliders for the objects.
+Hitting these objects in the course triggers the game-ending functionality (DetecCollasion.cs).
+We implemented this feature by referring to the lesson content.
+
+2) Randomly Spawned Animal Objects:
+
+In our course, there are animal objects spawned at random locations every 3 seconds, preceding randomly placed vehicles.
+Colliding with these animals results in the termination of the game.
+The animals have bounds set within specific limits, and after crossing the road, they are destroyed at a predefined coordinate (SpawnManager, DestroyOutOfBounds.cs, Movefoward.cs).
+These functionalities were implemented using lesson content and knowledge gained from the 3rd homework.
+
+3) Realistic Vehicle Controls and Tracking Camera:
+
+Our game features a vehicle with realistic controls and a tracking camera providing an immersive gaming experience (FollowMyCar.cs, MycarController.cs).
+The camera functionality was implemented by referring to the 1st homework.Vehicle control was implemented with guidance from YouTube videos.
+
+4) Game Over and Mission Complete Interfaces:
+
+We created interfaces for "game over" and "Mission Complete" that allow for restarting the game. These interfaces were implemented by referencing YouTube videos.
